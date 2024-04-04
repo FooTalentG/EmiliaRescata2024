@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-secondary: #f6bab6;
+  --color-primary: #6d0401;
+  --color-text-white: #ffffff;
+  --bg-primary: #fdeeed;
+  --color-black: #000000;
+  --bg-color-wsp: #25d366;
+  --color-blue-light: #3d82ad;
+  --color-blue-dark: #306688;
+  --color-input-form: #767676;
+  /*    imagenes  background  */
+
+  --image-bg-1: url('../assets/vectorBgImg/image-bg.webp');
+  --image-vector: url('../assets/vectorBgImg/vector.webp');
+  --image-vector2: url('../assets/imgSobreNosotros/imgDivisor.svg');
+  --image-vector3: url('../assets/vectorBgImg/Vector3.webp');
+  /*--position-vector:*/
+  --bg-footer: #f6bab6;
+  --donations-button: #c74a42;
+  --border-card-membresia: #feb2ad;
+  --botton-plan-fijo: #204456;
+  --color-text-banner: #ea5348;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 360px;
+  user-select: none;
+}
+
+img {
+  display: block;
+}
+
+/* CarouselDogs */
+.imagesDogs {
+  height: calc(100vh - 110px); /* Por defecto */
+}
+
+@media (min-width: 951px) and (max-width: 1200px) {
+  .imagesDogs {
+    height: calc(100vh - 30vh);
+  }
+}
+@media (min-width: 951px) and (min-height: 1500px) {
+  .imagesDogs {
+    height: calc(100vh - 60vh);
+  }
+}
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .imagesDogs {
+    height: calc(100vh - 55vh);
+  }
+}
+
+@media (max-width: 950px) {
+  .imagesDogs {
+    height: calc(100vh - 60vh);
+  }
+}
+
+@media (max-width: 850px) {
+  .imagesDogs {
+    height: calc(100vh - 60vh);
+  }
+}
+@media (max-width: 768px) {
+  .imagesDogs {
+    height: calc(100vh - 60vh);
+  }
+}
+
+@media (max-width: 620px) {
+  .imagesDogs {
+    height: calc(100vh - 70vh);
+  }
+}
+
+@media (max-width: 540px) {
+  .imagesDogs {
+    height: calc(100vh - 60vh);
+  }
+}
+@media (max-width: 480px), (max-width: 300px) {
+  .imagesDogs {
+    height: calc(100vh - 75vh);
+  }
+}

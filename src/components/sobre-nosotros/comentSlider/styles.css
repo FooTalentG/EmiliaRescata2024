@@ -1,0 +1,42 @@
+/*Estilos para Scrollbar */
+.overflow-custom::-webkit-scrollbar {
+  width: 5px; /* Ancho del scrollbar */
+}
+
+.overflow-custom::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de fondo del scrollbar */
+}
+
+.overflow-custom::-webkit-scrollbar-thumb {
+  background-color: var(--bg-secondary); /* Color del botón de desplazamiento del scrollbar */
+  border-radius: 6px; /* Radio de borde del botón de desplazamiento */
+}
+.slick-prev,
+.slick-next {
+  /* width: 3rem !important; */
+  height: 3rem !important;
+  z-index: 10 !important;
+}
+.slick-prev {
+  left: -27px !important;
+}
+.slick-next {
+  right: -9px !important;
+}
+/* Estilos para la flecha izquierda */
+.slick-prev::before {
+  line-height: 0 !important;
+  content: '<' !important;
+  font-family: monospace !important;
+  font-size: 70px !important;
+  color: var(--color-primary) !important;
+}
+
+/* Estilos para la flecha derecha */
+.slick-next::before {
+  line-height: 0 !important;
+  content: '>' !important;
+  font-family: monospace !important;
+  font-size: 70px !important;
+  color: var(--color-primary) !important;
+}

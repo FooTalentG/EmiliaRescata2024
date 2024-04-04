@@ -1,0 +1,16 @@
+.container-circleimage {
+  background-image: url(../../../assets/vectorBgImg/vector.webp);
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: calc(50% - 0.3em) calc(15% + 0em);
+  background-size: calc(80% - 0.3em);
+}
+
+@media screen and (max-width: 767px) {
+  .container-circleimage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+    gap: 2rem;
+  }
+}
